@@ -1,6 +1,7 @@
 package markus.wieland.hangman.ui.screens;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -16,6 +17,7 @@ import markus.wieland.hangman.HangmanConfiguration;
 import markus.wieland.hangman.HangmanGenerator;
 import markus.wieland.hangman.R;
 import markus.wieland.hangman.models.HangmanWord;
+import markus.wieland.hangman.ui.history.GameHistoryActivity;
 
 public class HangmanStartScreen extends StartScreenView implements View.OnClickListener {
 
@@ -70,11 +72,18 @@ public class HangmanStartScreen extends StartScreenView implements View.OnClickL
 
         Button buttonStartWithCustomWord = findViewById(R.id.activity_hangman_start_screen_start);
         Button buttonStartWithRandomWord = findViewById(R.id.activity_hangman_start_screen_random_word);
+        Button buttonHistory = findViewById(R.id.activity_hangman_start_screen_history);
 
         this.editTextWordInput = findViewById(R.id.activity_hangman_start_screen_enter_word);
         this.randomWord = false;
 
         buttonStartWithCustomWord.setOnClickListener(this);
         buttonStartWithRandomWord.setOnClickListener(v -> randomWord());
+        buttonHistory.setOnClickListener(v -> openHistory());
+    }
+
+    private void openHistory() {
+        Intent intent = new Intent(getContext(), GameHistoryActivity.class);
+        getContext().startActivity(intent);
     }
 }
