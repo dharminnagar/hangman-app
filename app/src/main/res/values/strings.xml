@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="hangman_title">Hangman</string>
+    <string name="hangman_game_over">You lose!</string>
+    <string name="hangman_solution">The word was:</string>
+    <string name="hangman_win">You win!</string>
+    <string name="hangman_play_again">Play again</string>
+    <string name="hangman_enter_word">Enter a word</string>
+    <string name="hangman_start_game">Start</string>
+    <string name="hangman_random_word">Random word</string>
+    <string name="hangman_or">or</string>
+    <string name="hangman_error_empty_word">Please enter a word.</string>
+    <string name="hangman_error_wrong_pattern">The word can only contain letters from A-Z. No special characters and spaces are allowed.</string>
+    <string name="hangman_back">Back to main menu</string>
+    <string name="hangman_history">Game History</string>
+</resources>

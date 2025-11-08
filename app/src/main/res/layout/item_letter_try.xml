@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Try Number -->
+    <TextView
+        android:id="@+id/tv_try_number"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="#1"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:alpha="0.7"/>
+
+    <!-- Result Indicator -->
+    <View
+        android:id="@+id/view_try_indicator"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/hangman_used_correct"/>
+
+    <!-- Letter -->
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/tv_try_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✓"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/hangman_used_correct"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galgenraten</string>
+    <string name="hangman_title">Galgenraten</string>
+    <string name="hangman_solution">Das Wort war:</string>
+    <string name="hangman_game_over" translatable="false">Verloren!</string>
+    <string name="hangman_win">Gewonnen!</string>
+    <string name="hangman_play_again">Erneut spielen</string>
+    <string name="hangman_enter_word">Wort eingeben</string>
+    <string name="hangman_start_game">Starten</string>
+    <string name="hangman_random_word">Zufälliges Wort</string>
+    <string name="hangman_or">oder</string>
+    <string name="hangman_error_empty_word">Bitte gib ein Wort ein.</string>
+    <string name="hangman_error_wrong_pattern">Das Wort darf nur aus Buchstaben von A-Z bestehen. Es sind keine Sonderzeichen/Leerzeichen erlaubt.</string>
+    <string name="hangman_back">Hauptmenü</string>
+</resources>
