@@ -46,7 +46,7 @@ public class GameDetailDialogFragment extends DialogFragment {
             gameId = getArguments().getLong(ARG_GAME_ID);
         }
         repository = HangmanRepository.getInstance(requireContext());
-        setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Material_Light_Dialog);
+        setStyle(DialogFragment.STYLE_NORMAL, R.style.Theme_Hangman);
     }
 
     @Nullable

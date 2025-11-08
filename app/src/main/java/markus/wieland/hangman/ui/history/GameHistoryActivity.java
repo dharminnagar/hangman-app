@@ -33,6 +33,10 @@ public class GameHistoryActivity extends AppCompatActivity implements GameHistor
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Apply the app theme
+        setTheme(R.style.Theme_Hangman);
+        
         setContentView(R.layout.activity_game_history);
 
         // Enable back button in action bar

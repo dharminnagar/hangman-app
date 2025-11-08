@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/darkBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,13 +25,15 @@
                 android:layout_weight="1"
                 android:text="Game Details"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <Button
                 android:id="@+id/btn_close"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Close"
+                android:textColor="@color/white"
                 style="?attr/borderlessButtonStyle"/>
 
         </LinearLayout>
@@ -41,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardElevation="2dp"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/hangman_field_background_night">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +61,8 @@
                     android:text="EXAMPLE"
                     android:textSize="32sp"
                     android:textStyle="bold"
-                    android:letterSpacing="0.1"/>
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"/>
 
                 <TextView
                     android:id="@+id/tv_detail_result"
@@ -79,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardElevation="2dp"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/hangman_field_background_night">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,7 +111,8 @@
                             android:layout_height="wrap_content"
                             android:text="Total Attempts"
                             android:textSize="12sp"
-                            android:textColor="#666"/>
+                            android:textColor="@color/white"
+                            android:alpha="0.7"/>
 
                         <TextView
                             android:id="@+id/tv_detail_attempts"
@@ -114,6 +121,7 @@
                             android:text="7"
                             android:textSize="20sp"
                             android:textStyle="bold"
+                            android:textColor="@color/white"
                             android:layout_marginTop="4dp"/>
 
                     </LinearLayout>
@@ -129,7 +137,8 @@
                             android:layout_height="wrap_content"
                             android:text="Wrong Attempts"
                             android:textSize="12sp"
-                            android:textColor="#666"/>
+                            android:textColor="@color/white"
+                            android:alpha="0.7"/>
 
                         <TextView
                             android:id="@+id/tv_detail_wrong_attempts"
@@ -148,7 +157,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#E0E0E0"
+                    android:background="@color/white"
+                    android:alpha="0.2"
                     android:layout_marginVertical="8dp"/>
 
                 <LinearLayout
@@ -161,7 +171,8 @@
                         android:layout_height="wrap_content"
                         android:text="Date"
                         android:textSize="12sp"
-                        android:textColor="#666"/>
+                        android:textColor="@color/white"
+                        android:alpha="0.7"/>
 
                     <TextView
                         android:id="@+id/tv_detail_date"
@@ -169,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:text="November 08, 2025 at 14:30"
                         android:textSize="14sp"
+                        android:textColor="@color/white"
                         android:layout_marginTop="4dp"/>
 
                 </LinearLayout>
@@ -184,7 +196,8 @@
                         android:layout_height="wrap_content"
                         android:text="Word Type"
                         android:textSize="12sp"
-                        android:textColor="#666"/>
+                        android:textColor="@color/white"
+                        android:alpha="0.7"/>
 
                     <TextView
                         android:id="@+id/tv_detail_word_type"
@@ -192,6 +205,7 @@
                         android:layout_height="wrap_content"
                         android:text="Random Word"
                         android:textSize="14sp"
+                        android:textColor="@color/white"
                         android:layout_marginTop="4dp"/>
 
                 </LinearLayout>
@@ -207,13 +221,15 @@
             android:text="Letter Tries"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:layout_marginBottom="8dp"/>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="2dp"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/hangman_field_background_night">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_letter_tries"

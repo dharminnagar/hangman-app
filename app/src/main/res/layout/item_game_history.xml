@@ -6,6 +6,7 @@
     android:layout_margin="8dp"
     app:cardElevation="2dp"
     app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/hangman_field_background_night"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground">
@@ -37,7 +38,8 @@
                 android:layout_height="wrap_content"
                 android:text="EXAMPLE"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/tv_game_attempts"
@@ -46,7 +48,8 @@
                 android:text="7 attempts (2 wrong)"
                 android:textSize="14sp"
                 android:layout_marginTop="4dp"
-                android:textColor="#666"/>
+                android:textColor="@color/white"
+                android:alpha="0.7"/>
 
             <TextView
                 android:id="@+id/tv_game_date"
@@ -55,7 +58,8 @@
                 android:text="Nov 08, 2025 14:30"
                 android:textSize="12sp"
                 android:layout_marginTop="2dp"
-                android:textColor="#999"/>
+                android:textColor="@color/white"
+                android:alpha="0.5"/>
 
         </LinearLayout>
 
